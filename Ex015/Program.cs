@@ -1,2 +1,10 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿Console.WriteLine("Введите цифру от 1 до 7:");
+int n = Convert.ToInt32(Console.ReadLine());
+if (n == 6 | n == 7)
+{
+    Console.WriteLine("Урррааа! Выходной");
+}
+else
+{
+    Console.WriteLine("Работать тебе ещё и работать, т.к. будничный день)))");
+}
