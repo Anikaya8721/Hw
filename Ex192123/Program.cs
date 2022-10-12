@@ -24,7 +24,7 @@ else
 
 
 //Задача 21
-/*Console.WriteLine("A1(x1;y1;z1),A2(x2;y2;z2)");
+Console.WriteLine("A1(x1;y1;z1),A2(x2;y2;z2)");
 Console.Write("Input x1: ");
 int x1 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Input y1: ");
@@ -37,10 +37,10 @@ Console.Write("Input y2: ");
 int y2 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Input z2: ");
 int z2 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("A1A2 length is: "+Math.Round(Math.Sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2)+(z1-z2)*(z1-z2)),2));*/
+Console.WriteLine("A1A2 length is: "+Math.Round(Math.Sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2)+(z1-z2)*(z1-z2)),2));
 
 //Задача 23
-/*bool one =true;
+bool one =true;
 while(one)
 {
     try
@@ -60,4 +60,4 @@ one = false;
 catch
 {
     Console.WriteLine("Ошибка ввода попробуйте ещё раз: ");
-}}*/
+}}
