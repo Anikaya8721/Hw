@@ -25,8 +25,30 @@ Console.WriteLine("Ваш массив: ");
 //Задача 40. Написать прогу, кот. принимает на вход 3 числа и проверяет может ли существовать
 //треугольник со сторонами такой длины. Вспоминая теорему о неравенстве треуг-ка:
 //каждая сторона треуг-ка меньше суммы 2-х других сторон.
+/*Console.WriteLine("Введите 3 числа: ");
+int a = Convert.ToInt32(Console.ReadLine());
+int b = Convert.ToInt32(Console.ReadLine());
+int c = Convert.ToInt32(Console.ReadLine());
+
+if(a + b > c && a +  c> b && b + c > a)
+{
+    Console.WriteLine("Это треугольник");
+}
+else Console.WriteLine("Это не треугольник");*/
+
 
 
 //Задача 42. Написать прогу, кот. будет преобразовывать десятичное число в двоичное:
 //45->101101, 3->11, 2->10
-
+Console.WriteLine("Введите число: ");
+int number = Convert.ToInt32(Console.ReadLine());
+string count = null;
+while (number != 0)
+{
+count += number % 3;
+number /= 3;
+}
+for(int i = count.Length-1; i>=0; i--)
+{
+Console.Write(count[i]);
+}
