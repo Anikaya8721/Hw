@@ -40,15 +40,16 @@ else Console.WriteLine("Это не треугольник");*/
 
 //Задача 42. Написать прогу, кот. будет преобразовывать десятичное число в двоичное:
 //45->101101, 3->11, 2->10
-Console.WriteLine("Введите число: ");
+/*Console.WriteLine("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 string count = null;
+
 while (number != 0)
 {
-count += number % 3;
-number /= 3;
+count += number % 2;
+number /= 2;
 }
-for(int i = count.Length-1; i>=0; i--)
+for(int i = count.Length-1; i >= 0; i--  )
 {
 Console.Write(count[i]);
-}
+}*/
