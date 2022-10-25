@@ -2,7 +2,7 @@
 // 0, 7, 8, -2, -2 -> 2
 // 1, -7, 567, 89, 223-> 3
 
-/*Console.WriteLine("Введите M чисел: ");
+Console.WriteLine("Введите M чисел: ");
 int m = Convert.ToInt32(Console.ReadLine());
 
 void FillArray(int[] array)
@@ -43,7 +43,7 @@ for (int i = 0; i < array.Length; i++)
 }
 Console.WriteLine(" ");
 
-Console.WriteLine($"Чисел больше 0 = {res}");*/
+Console.WriteLine($"Чисел больше 0 = {res}");
 
 
 
@@ -53,7 +53,7 @@ Console.WriteLine($"Чисел больше 0 = {res}");*/
 //  y = k1 * x + b1, y = k2 * x + b2; значения b1, k1, b2 и k2 задаются пользователем.
 // b1 = 2, k1 = 5, b2 = 4, k2 = 9 -> (-0,5; -0,5)
 
-/*Console.WriteLine("значения b1");
+Console.WriteLine("значения b1");
 double b1 = double.Parse(Console.ReadLine()!);
 Console.WriteLine("значения k1");
 double k1 = double.Parse(Console.ReadLine()!);
@@ -79,4 +79,4 @@ else
     {
         Console.WriteLine("прямые параллельны");
     }
-}*/
+}
