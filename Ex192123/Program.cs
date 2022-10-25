@@ -6,7 +6,7 @@ string textNumber = num.ToString();
 char[]text = textNumber.ToCharArray();
 Array.Reverse(text);
 Console.WriteLine(text);*/
-Console.Write("Введите число: ");
+/*Console.Write("Введите число: ");
 int n = Convert.ToInt32(Console.ReadLine());
 int numbersave = n;
 int revnumber = 0;
@@ -37,10 +37,10 @@ Console.Write("Input y2: ");
 int y2 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Input z2: ");
 int z2 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("A1A2 length is: "+Math.Round(Math.Sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2)+(z1-z2)*(z1-z2)),2));
+Console.WriteLine("A1A2 length is: "+Math.Round(Math.Sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2)+(z1-z2)*(z1-z2)),2));*/
 
 //Задача 23
-bool one =true;
+/*bool one =true;
 while(one)
 {
     try
@@ -60,4 +60,4 @@ one = false;
 catch
 {
     Console.WriteLine("Ошибка ввода попробуйте ещё раз: ");
-}}
+}}*/
