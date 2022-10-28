@@ -120,36 +120,151 @@ void arrayOutput (int[,] arr)
    }
    Console.WriteLine(" ");
 }*/
+//вариант от преподавателя:
+/*Console.WriteLine("Введите высоту матрицы: ");
+int m = int.Parse(Console.ReadLine()!);
+Console.WriteLine("Введите длину матрицы: ");
+int n = int.Parse(Console.ReadLine()!);
+
+int[,] matr = new int [m, n];
+
+void Fill (int[,] matr)
+{
+for ( int i = 0; i < matr.GetLength(0); i++)
+   {
+   for (int j = 0; j < matr.GetLength(1); j++)
+      {
+        matr[i, j] = new Random(). Next(1,10);
+      }
+   }
+}
+Fill(matr);
+Console.WriteLine();
+Console.WriteLine("Исходная матрица: ");
+Print(matr);
+
+for ( int i = 0; i < matr.GetLength; i+=2)
+   {
+   for ( int j = 0; j < matr.GetLength; j+=2)
+      {
+        matr[i, j] *= matr[i, j];
+      }
+}
+
+
+void Print (int[,] matr)
+{
+   for ( int i = 0; i < matr.GetLength(0); i++)
+   {
+      for ( int j = 0; j < matr.GetLength(1); j++)
+        {
+            Console.Write(matr[i, j] + " ");
+        }
+      Console.WriteLine();
+   }
+}
+   Console.WriteLine("Измененная матрица: ");
+   Print(matr);*/
+
 
 //Задача 51. Задайте двумерный массив. Найдите сумму элементов, находящихся на главной диагонали.
 
-/*int m = Convert.ToInt32(Console.ReadLine());
+/*Console.WriteLine("Количество строк: ");
+int m = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Количество столбцов: ");
 int n = Convert.ToInt32(Console.ReadLine());
+
 int[,] array = new int[m, n];
-int count = 0;
 
 Console.WriteLine();
 fillArray(array);
 printArray(array);
 Console.WriteLine();
-indexArray(array);
-printArray(array);
+Console.WriteLine(indexFinder(array));
 
-int[,] FillArray = (int[,] arr);
+
+int[,] fillArray (int[,] arr)
 {
 for (int i = 0; i < arr.GetLength(0); i++)
    {
    for (int j = 0; j < arr.GetLength(1); j++)
       {
-        arr[i, j] = new Random(). Next(1,20);
+        arr[i, j] = new Random(). Next(1,10);
       }
    }
    return arr;
 }
- int[,] indexFinder = (int[,] arr, int c)
- {
+ int indexFinder (int[,] arr)
+{
+   int c = 0;
+   int min = arr.GetLength(0);
+  
     if (arr.GetLength(0) > arr.GetLength(1))
-    {
-        int min = arr.GetLength(1);
-    }
- }*/
+      {
+      min = arr.GetLength(1);
+      }
+    for (int i = 0; i < min; i++)
+      {
+      c += arr [i, i];
+      }
+return c;
+}
+
+void printArray (int[,]arr)
+{
+   for (int i = 0; i < arr.GetLength(0); i++)
+   {
+      for (int j = 0; j < arr.GetLength(1); j++)
+      {
+         Console.Write(arr[i, j]+ " ");
+      }
+      Console.WriteLine();
+   }
+}*/
+//вариант от преподавателя:
+ /*Console.WriteLine("Введите высоту матрицы: ");
+int m = int.Parse(Console.ReadLine()!);
+Console.WriteLine("Введите длину матрицы: ");
+int n = int.Parse(Console.ReadLine()!);
+
+int[,] matr = new int [m, n];
+
+void Fill (int[,] matr)
+{
+for ( int i = 0; i < matr.GetLength(0); i++)
+   {
+   for (int j = 0; j < matr.GetLength(1); j++)
+      {
+        matr[i, j] = new Random(). Next(1,10);
+      }
+   }
+}
+
+void Print (int[,] matr)
+{
+   for ( int i = 0; i < matr.GetLength(0); i++)
+   {
+      for ( int j = 0; j < matr.GetLength(1); j++)
+        {
+            Console.Write(matr[i, j] + " ");
+        }
+      Console.WriteLine();
+   }
+}
+   Console.WriteLine("Исходная матрица: ");
+   Fill(matr);
+   Print(matr);
+
+   int sum = 0;
+   Console.WriteLine();
+   for ( int i = 0; i < matr.GetLength(0); i++)
+   {
+      for ( int j = 0; j < matr.GetLength(1); j++)
+      {
+         if (i==j)
+         {
+         sum=sum+matr[i, j];
+         } 
+      }
+   }
+Console.WriteLine("Сумма элементов главной диагонали=: " + sum);*/
