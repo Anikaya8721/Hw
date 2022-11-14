@@ -11,7 +11,7 @@
 8 4 4 2
 */
 
-Console.WriteLine("Введите число строк");
+/*Console.WriteLine("Введите число строк");
 int m = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine("Введите число столбцов");
@@ -67,7 +67,7 @@ int[,] matrix = FillMatrix(m, n);
 PrintMatrix(matrix);
 Console.WriteLine();
 InvertMatrix(matrix);
-PrintMatrix(matrix);
+PrintMatrix(matrix);*/
 
 /*
 Задача 56: Задайте прямоугольный двумерный массив. Напишите программу, которая будет находить 
@@ -79,7 +79,7 @@ PrintMatrix(matrix);
 5 2 6 7
 Программа считает сумму элементов в каждой строке и выдаёт номер строки с наименьшей суммой элементов: 1 строка
 */
-Console.WriteLine("Введите число строк");
+/*Console.WriteLine("Введите число строк");
 int m = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите число столбцов");
 int n = Convert.ToInt32(Console.ReadLine());
@@ -134,7 +134,7 @@ for (int i = 0; i < matrix.GetLength(0); i++)
     }
     Console.WriteLine($"Сумма {i + 1} строки = {sumRow} ");
 }
-Console.WriteLine($"Максимальная строка {maxLine} её сумма = {max} ");
+Console.WriteLine($"Максимальная строка {maxLine} её сумма = {max} ");*/
 
 /*
 Задача 58: Задайте две матрицы. Напишите программу, которая будет находить произведение двух матриц.
@@ -145,7 +145,7 @@ Console.WriteLine($"Максимальная строка {maxLine} её сум�
 18 20
 15 18
 */
-Console.Clear();
+/*Console.Clear();
 Console.WriteLine("Введите число строк");
 int m = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите число столбцов");
@@ -195,7 +195,7 @@ for (int i = 0; i < multiMatrix.GetLength(0); i++)
     };
 }
 
-PrintMatrix(multiMatrix);
+PrintMatrix(multiMatrix);*/
 
 /*
 Задача 60. ...Сформируйте трёхмерный массив из неповторяющихся двузначных чисел. 
@@ -206,7 +206,7 @@ PrintMatrix(multiMatrix);
 27(0,0,1) 90(0,1,1)
 26(1,0,1) 55(1,1,1)
 */
-Console.Clear();
+/*Console.Clear();
 Console.WriteLine("Введите число x");
 int x = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите число y");
@@ -268,7 +268,7 @@ void FillMatrix(int[,,] matrix3D)
 
 int[,,] matrix3D = new int[x, y, z];
 FillMatrix(matrix3D);
-PrintMatrix(matrix3D);
+PrintMatrix(matrix3D);*/
 
 /*
 Задача 62. Напишите программу, которая заполнит спирально массив 4 на 4.
@@ -278,7 +278,7 @@ PrintMatrix(matrix3D);
 11 16 15 06
 10 09 08 07
 */
-Console.Clear();
+/*Console.Clear();
 
 Console.WriteLine("Введите x - размер матрицы [x, x]");
 int n = Convert.ToInt32(Console.ReadLine());
@@ -317,4 +317,4 @@ void FillMatrix (int[,] matrix)
   }
 }
 
-FillMatrix(matrix);
+FillMatrix(matrix);*/
